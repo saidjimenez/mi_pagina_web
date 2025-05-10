@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poleras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Tienda Online</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="tenis.html">Tenis</a></li>
+    <li><a href="canguros.html">Canguros</a></li>
+    <li><a href="pantalones.html">Pantalones</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>Poleras</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Polera Puma">
+        <h3>Polera Puma</h3>
+        <p>Talla: S</p>
+        <p>Modelo: Classic</p>
+        <p>Descripción: Polera deportiva Puma Classic</p>
+        <p>Precio: $50.00</p>
+        <button onclick="addToCart('Polera Puma', 50)">Agregar al Carrito</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Polera Reebok">
+        <h3>Polera Reebok</h3>
+        <p>Talla: M</p>
+        <p>Modelo: Club C</p>
+        <p>Descripción: Polera deportiva Reebok Club C</p>
+        <p>Precio: $45.00</p>
+        <button onclick="addToCart('Polera Reebok', 45)">Agregar al Carrito</button>
+      </div>
+    </div>
+  </section>
+  <a id="checkoutLink" href="#" style="display: none;">Finalizar Compra</a>
+  <a href="seleccion-producto.html?categoria=poleras">
+    <button>Realizar Compra</button>
+  </a>
+</main>
+
+<footer>
+  <p>&copy; 2023 Tienda Online</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

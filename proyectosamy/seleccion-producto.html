@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleccionar Producto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Seleccionar Producto</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="tenis.html">Tenis</a></li>
+    <li><a href="canguros.html">Canguros</a></li>
+    <li><a href="poleras.html">Poleras</a></li>
+    <li><a href="pantalones.html">Pantalones</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>Selecciona tu Producto</h2>
+    <form id="productoForm">
+      <label for="categoria">Categoría:</label>
+      <select id="categoria" name="categoria" required>
+        <option value="">Selecciona una categoría</option>
+        <option value="tenis">Tenis</option>
+        <option value="canguros">Canguros</option>
+        <option value="poleras">Poleras</option>
+        <option value="pantalones">Pantalones</option>
+      </select><br>
+      <label for="marca">Marca:</label>
+      <select id="marca" name="marca" required>
+        <!-- Opciones se cargarán dinámicamente -->
+      </select><br>
+      <label for="modelo">Modelo:</label>
+      <select id="modelo" name="modelo" required>
+        <!-- Opciones se cargarán dinámicamente -->
+      </select><br>
+      <label for="talla">Talla:</label>
+      <select id="talla" name="talla" required>
+        <!-- Opciones se cargarán dinámicamente -->
+      </select><br>
+      <label for="color">Color:</label>
+      <select id="color" name="color" required>
+        <!-- Opciones se cargarán dinámicamente -->
+      </select><br>
+      <button type="submit">Continuar</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Tienda Online</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantalones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Tienda Online</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="tenis.html">Tenis</a></li>
+    <li><a href="canguros.html">Canguros</a></li>
+    <li><a href="poleras.html">Poleras</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>Pantalones</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Pantalon Reebok">
+        <h3>Pantalon Reebok</h3>
+        <p>Talla: S</p>
+        <p>Modelo: Power Move</p>
+        <p>Descripción: Pantalón deportivo Reebok Power Move</p>
+        <p>Precio: $70.00</p>
+        <button onclick="addToCart('Pantalon Reebok', 70)">Agregar al Carrito</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Pantalon Nike">
+        <h3>Pantalon Nike</h3>
+        <p>Talla: M</p>
+        <p>Modelo: Dri-FIT</p>
+        <p>Descripción: Pantalón deportivo Nike Dri-FIT</p>
+        <p>Precio: $85.00</p>
+        <button onclick="addToCart('Pantalon Nike', 85)">Agregar al Carrito</button>
+      </div>
+    </div>
+  </section>
+  <a id="checkoutLink" href="#" style="display: none;">Finalizar Compra</a>
+  <a href="seleccion-producto.html?categoria=pantalones">
+    <button>Realizar Compra</button>
+  </a>
+</main>
+
+<footer>
+  <p>&copy; 2023 Tienda Online</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
